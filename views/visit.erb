@@ -24,11 +24,11 @@ $(alert('aaa'));
    <div class="form-group">
     <label >Выберите вашего парикмахера</label>
     
-    <select name="barber" class="form-select" aria-label="Default select example">
-    <option selected>Откройте выпадающее меню</option>
-    <option value="Светлана">Светлана</option>
-    <option  value="Марина">Марина</option>
-    <option value="Оксана">Оксана</option>
+    <select name="barber" class="form-control" >
+    
+    <option <%= @barber == 'Светлана' ? 'selected' : ''%> >Светлана</option>
+    <option <%= @barber == 'Марина' ? 'selected' : ''%> >Марина</option>
+    <option <%= @barber == 'Оксана' ? 'selected' : ''%>>Оксана</option>
    </select><br><br>
    </div>
 
